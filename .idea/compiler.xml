@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="monitoring-observability" />
+        <module name="api-gateway" />
+        <module name="config-service" />
+        <module name="discovery-service" />
+        <module name="base-domaine-service" />
+      </profile>
+      <profile name="Annotation profile for M-sante" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
+        </processorPath>
+        <module name="messaging-service" />
+        <module name="practitioner-service" />
+        <module name="audit-logging-service" />
+        <module name="payment-service" />
+        <module name="appointment-service" />
+        <module name="video-conference-service" />
+        <module name="faq-support-service" />
+        <module name="patient-service" />
+        <module name="user-service" />
+        <module name="testing-assessment-service" />
+        <module name="notification-service" />
+        <module name="document-service" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="M-sante" options="" />
+      <module name="api-gateway" options="" />
+      <module name="appointment-service" options="-parameters" />
+      <module name="audit-logging-service" options="-parameters" />
+      <module name="base-domaine-service" options="" />
+      <module name="config-service" options="" />
+      <module name="discovery-service" options="" />
+      <module name="document-service" options="-parameters" />
+      <module name="faq-support-service" options="-parameters" />
+      <module name="messaging-service" options="-parameters" />
+      <module name="monitoring-observability" options="-parameters" />
+      <module name="notification-service" options="-parameters" />
+      <module name="patient-service" options="-parameters" />
+      <module name="payment-service" options="-parameters" />
+      <module name="practitioner-service" options="-parameters" />
+      <module name="testing-assessment-service" options="-parameters" />
+      <module name="user-service" options="-parameters" />
+      <module name="video-conference-service" options="-parameters" />
+    </option>
+  </component>
+</project>
